@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Panzer Parking Lot</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+font-family:Roboto,sans-serif;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url("1000034157.jpg");
+background-size:cover;
+background-position:center;
+opacity:.18;
+z-index:-2;
+}
+
+body::after{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:radial-gradient(circle,#7d0000 0%,transparent 70%);
+opacity:.15;
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+border-bottom:2px solid #b30000;
+position:sticky;
+top:0;
+}
+
+nav h1{
+font-family:'Bebas Neue';
+font-size:40px;
+letter-spacing:3px;
+color:#ff2d2d;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h2{
+font-family:'Bebas Neue';
+font-size:95px;
+letter-spacing:5px;
+color:#ff2d2d;
+text-shadow:0 0 25px red;
+}
+
+.hero h3{
+font-family:'Orbitron';
+font-size:30px;
+margin-top:15px;
+}
+
+.hero p{
+margin-top:25px;
+font-size:20px;
+max-width:800px;
+line-height:1.8;
+}
+
+.button{
+margin-top:45px;
+display:inline-block;
+padding:18px 45px;
+background:#b30000;
+border:2px solid #ff4040;
+border-radius:8px;
+text-decoration:none;
+font-size:24px;
+color:white;
+transition:.3s;
+}
+
+.button:hover{
+background:#ff2020;
+transform:scale(1.08);
+box-shadow:0 0 25px red;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+font-family:'Bebas Neue';
+font-size:55px;
+color:#ff3030;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#161616;
+padding:30px;
+border-left:5px solid #b30000;
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 18px rgba(255,0,0,.5);
+}
+
+.card h3{
+font-family:'Orbitron';
+margin-bottom:15px;
+color:#ff4040;
+}
+
+footer{
+background:#111;
+padding:40px;
+text-align:center;
+border-top:2px solid #b30000;
+}
+
+footer h2{
+font-family:'Bebas Neue';
+font-size:45px;
+color:#ff2d2d;
+}
+
+footer p{
+margin:20px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h1>PANZER PARKING LOT</h1>
+
+<div>
+
+<a href="#about">About</a>
+
+<a href="#features">Features</a>
+
+<a href="#join">Join</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h2>THE PANZER PARKING LOT</h2>
+
+<h3>Custom Call of War Roleplay</h3>
+
+<p>
+
+Where strategy, diplomacy and competitive gameplay come together.
+
+Join a growing community that hosts balanced Call of War campaigns designed for players who want a true strategic experience.
+
+</p>
+
+<a class="button"
+href="YOUR_DISCORD_INVITE"
+target="_blank">
+
+JOIN OUR DISCORD
+
+</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">ABOUT US</h2>
+
+<p style="font-size:20px;line-height:2;max-width:900px;">
+
+The Panzer Parking Lot is a dedicated Call of War community focused on creating fair, organized and immersive roleplay games. Every campaign is carefully planned with balanced rules, active moderation and competitive gameplay where diplomacy matters as much as military strength.
+
+</p>
+
+</section>
+
+<section id="features">
+
+<h2 class="title">WHY JOIN?</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>⚔ Fair Battles</h3>
+
+<p>No unfair advantages. Victory comes from strategy.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🗺 Custom Scenarios</h3>
+
+<p>Unique campaigns with custom rules and historical inspiration.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤝 Diplomacy</h3>
+
+<p>Create alliances, negotiate peace and outsmart your enemies.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Competitive Community</h3>
+
+<p>Friendly players, active moderators and exciting events.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer id="join">
+
+<h2>READY TO COMMAND?</h2>
+
+<p>
+
+Join our Discord and prove yourself on the battlefield.
+
+</p>
+
+<a class="button"
+
+href="YOUR_DISCORD_INVITE"
+
+target="_blank">
+
+ENTER THE PANZER PARKING LOT
+
+</a>
+
+<br><br>
+
+<p>© 2026 The Panzer Parking Lot</p>
+
+</footer>
+
+</body>
+</html>
